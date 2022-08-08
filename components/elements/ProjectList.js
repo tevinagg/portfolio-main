@@ -30,17 +30,17 @@ function ProjectList() {
                     </>
                 }
                 techUsed={[faHtml5, faCss3, faSass, faBootstrap, faJs, faNode, "mongodb.svg"]}
-                demo="http://139.162.233.144/"
-                youtube={true}
-                link="https://www.youtube.com/embed/uCpxKfBrX7k"
+                demo="http://ecommerce.faizscripts.com/"
+                src={commerce}
+
+
             />
 
             <ProjectItem
                 title= "Wordpress e-commerce site"
                 description={
                     <p>
-                        Another fully functional website built with Wordpress which has good SEO with help of plugins. Which is responsive across all screens.
-                        <a href="https://abufulan.co.ke/" target="_blank" rel="noreferrer"> Abufulan</a> is also sells electronics and the client was pleased with the site.
+                        Another fully functional website built with Wordpress which has good SEO with help of plugins. Which is responsive across all screens. <a href="https://abufulan.co.ke/" target="_blank" rel="noreferrer">Abufulan</a> is also sells electronics and the client was pleased with the site.
 
                     </p>
                 }

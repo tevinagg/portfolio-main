@@ -85,13 +85,13 @@ function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, l
                 </div>
                 <div className="project-links">
                     <a href={demo} target="_blank" rel="noreferrer">
-                        <button className="btn btn-outline-primary mx-2">View Demo &nbsp; <FontAwesomeIcon
+                        <button className="btn btn-outline-primary mx-2">Preview Site &nbsp; <FontAwesomeIcon
                             icon={faArrowUpRightFromSquare}/></button>
                     </a>
-                    <a href={sourceCode} target="_blank" rel="noreferrer">
-                        <button className="btn btn-outline-primary mx-2">View Code &nbsp; <FontAwesomeIcon icon={faGithub}/>
-                        </button>
-                    </a>
+                    {/*<a href={sourceCode} target="_blank" rel="noreferrer">*/}
+                    {/*    <button className="btn btn-outline-primary mx-2">View Code &nbsp; <FontAwesomeIcon icon={faGithub}/>*/}
+                    {/*    </button>*/}
+                    {/*</a>*/}
                 </div>
             </div>
             <div className="col-1 project-details-extended"></div>

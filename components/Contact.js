@@ -22,6 +22,7 @@ function Contact() {
 
         } catch (e) {
             console.log(e);
+            setSending(false)
             alert("Message failed to send.")
         }
     }

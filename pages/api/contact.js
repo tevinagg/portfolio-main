@@ -7,14 +7,14 @@ export default async function handler(req, res) {
         service: 'gmail',
         secure: false,
         auth: {
-            user: '44faizahmed@gmail.com',
+            user: 'taggrey26@gmail.com',
             pass: process.env.APP_PASSWORD
         }
     })
 
     const mailOptions = {
-        from: `"${name}" 44faizahmed@gmail.com`,
-        to: "4faizahmed@gmail.com",
+        from: `"${name}" taggrey26@gmail.com`,
+        to: "taggrey26@gmail.com",
         subject: `PORTFOLIO MAIL FROM: ${name}`,
         html: `
         Name: ${name} <br>
