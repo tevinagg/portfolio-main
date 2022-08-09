@@ -1,6 +1,6 @@
 import ProjectItem from "./ProjectItem";
 import commerce from "../../public/images/projects/commerce.png";
-import Abuflan3 from "../../public/images/projects/Abuflan3.PNG";
+import Abuflan3 from "../../public/images/projects/Abuflan3.png";
 import {
     faHtml5,
     faCss3,
