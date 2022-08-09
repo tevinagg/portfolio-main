@@ -35,7 +35,6 @@ function Skills() {
                 <SkillsList>
                     <SkillsItem src="/images/skills/git.png" name="Git" />
                     <SkillsItem src="/images/skills/wordpress.png" name="Wordpress" />
-                    <SkillsItem src="/images/skills/azure.png" name="Azure" />
                     <SkillsItem src="/images/skills/photoshop.png" name="Photoshop" />
                 </SkillsList>
             </div>
