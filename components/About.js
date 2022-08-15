@@ -1,9 +1,9 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import Image from "next/image";
-import me from "../public/images/me.png"
+import mine from "../public/images/mine.webp"
 
 function About() {
-    const [windowDimensions, setWindowDimensions] =useWindowDimensions()
+    const [windowDimensions] =useWindowDimensions()
 
     const renderAboutPhoto = () => {
         if (windowDimensions){
@@ -12,12 +12,12 @@ function About() {
                 return(
                     <div className="about-photo-container">
                         <div className="about-photo" data-aos="fade-up">
-                            <Image src={me} alt={me} layout="fill" placeholder="blur"  />
+                            <Image src={mine} alt={mine} layout="fill" placeholder="blur"  />
                         </div>
                     </div>
                 )
             } else return null
-        }
+        }else return null
     }
 
     return (
@@ -52,7 +52,7 @@ function About() {
                 environments globally to utilize and enhance my well honed skills.
             </p>
             <div className="d-flex justify-content-center">
-                <a href="/Aggrey CV.pdf" className="btn btn-primary mt-4" data-aos="fade-up">Download CV</a>
+                <a href="/Tevin Aggrey CV.pdf" className="btn btn-primary mt-4" data-aos="fade-up">Download CV</a>
             </div>
         </div>
     )

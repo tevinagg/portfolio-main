@@ -71,7 +71,7 @@ function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, l
     return (
         <div className="row project-item" data-aos="fade-up">
             <div className="col-lg-6 project-details">
-                <h3 className="project-heading">{title}</h3>
+                <h2 className="project-heading">{title}</h2>
                 <div className="project-description">
                     {description}
                 </div>

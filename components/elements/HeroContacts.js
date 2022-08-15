@@ -36,13 +36,13 @@ function HeroContacts() {
 
     return (
         <div id="contact">
-            <a href="tel:+254718198492">
-                <button ref={callRef} className="icons">
+            <a href="tel:+254718198492" alt="Phone Number">
+                <button ref={callRef} className="icons" aria-label="phone">
                     <FontAwesomeIcon icon={faMobileScreenButton} className="default"/>
                 </button>
             </a>
-            <a href="mailto:taggrey26@gmail.com">
-                <button ref={mailRef} className="icons">
+            <a href="mailto:taggrey26@gmail.com" alt="email">
+                <button ref={mailRef} className="icons" aria-label="email">
                     <FontAwesomeIcon icon={faEnvelope} className="default"/>
                 </button>
             </a>
@@ -51,18 +51,18 @@ function HeroContacts() {
             {/*        <FontAwesomeIcon icon={faGithub} className="default"/>*/}
             {/*    </button>*/}
             {/*</a>*/}
-            <a href="https://wa.me/254718198492" target="_blank" rel="noreferrer">
-                <button ref={whatsappRef} className="icons">
+            <a href="https://wa.me/254718198492" target="_blank" rel="noreferrer" alt="whatsapp">
+                <button ref={whatsappRef} className="icons" aria-label="whatsapp">
                     <FontAwesomeIcon icon={faWhatsapp} className="whatsapp"/>
                 </button>
             </a>
-            <a href="https://twitter.com/TevinAggrey26" target="_blank" rel="noreferrer">
-                <button ref={twitterRef} className="icons">
+            <a href="https://twitter.com/TevinAggrey26" target="_blank" rel="noreferrer" alt="twitter">
+                <button ref={twitterRef} className="icons" aria-label="twitter">
                     <FontAwesomeIcon icon={faTwitter} className="twitter"/>
                 </button>
             </a>
-            <a href="https://www.linkedin.com/in/tevin-aggrey/" target="_blank" rel="noreferrer">
-                <button ref={linkedInRef} className="icons">
+            <a href="https://www.linkedin.com/in/tevin-aggrey/" target="_blank" rel="noreferrer" alt="linkedin">
+                <button ref={linkedInRef} className="icons" aria-label="linkedin">
                     <FontAwesomeIcon icon={faLinkedin} className="linked"/>
                 </button>
             </a>
