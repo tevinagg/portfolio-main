@@ -1,6 +1,6 @@
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import Image from "next/image";
-import mine from "../public/images/mine.webp"
+import myImage from "../public/images/tevin2.webp"
 
 function About() {
     const [windowDimensions] =useWindowDimensions()
@@ -12,7 +12,7 @@ function About() {
                 return(
                     <div className="about-photo-container">
                         <div className="about-photo" data-aos="fade-up">
-                            <Image src={mine} alt={mine} layout="fill" placeholder="blur"  />
+                            <Image src={myImage} alt={myImage} layout="fill" placeholder="blur"  />
                         </div>
                     </div>
                 )
