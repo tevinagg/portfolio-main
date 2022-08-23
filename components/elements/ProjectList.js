@@ -30,7 +30,7 @@ function ProjectList() {
                     </>
                 }
                 techUsed={[faHtml5, faCss3, faSass, faBootstrap, faJs, faNode, "mongodb.svg"]}
-                demo="http://139.162.233.144/"
+                demo="https://www.amazon-cellular.co.ke/"
                 src={commerce}
 
 
@@ -39,10 +39,18 @@ function ProjectList() {
             <ProjectItem
                 title= "Wordpress e-commerce site"
                 description={
-                    <p>
-                        Another fully functional e-commerce website built with Wordpress which has good SEO with help of plugins and fully responsive across all screens. <a href="https://abufulan.co.ke/" target="_blank" rel="noreferrer">Abufulan</a> is also sells electronics and the client was pleased with the site.
+                    <>
+                        <p>
+                            A fully functional e-commerce website built with Wordpress which has good SEO with help of plugins and fully responsive across all screens.    <a href="https://abufulan.co.ke/" target="_blank" rel="noreferrer">Abufulan</a> is sells electronics country-wide.
+                        </p>
+                        <p>
+                            The client had no coding experience but needed a website that would easy to maintain and update. The best approach in this case was Wordpress site and which I used my skills to develop for him Abufulan. It was a good experience for me and I learnt a lot.
+                        </p>
 
-                    </p>
+                    </>
+
+
+
                 }
                 techUsed={[faWordpress]}
                 demo= "https://abufulan.co.ke/"
