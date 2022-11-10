@@ -8,6 +8,7 @@ function Hero() {
     const [windowDimension] = useWindowDimensions()
 
     const renderHeroPhoto = () => {
+
         if (windowDimension){
             const {width} = windowDimension
             if (width > 768){

@@ -16,7 +16,10 @@ const useWindowDimensions = () => {
             setWindowDimensions(getWindowDimensions());
         }
 
-        window.addEventListener('load', handleResize);
+        window.addEventListener('load',() => {
+            handleResize()
+            console.log('loading')
+        });
 
         window.addEventListener('resize', handleResize);
 
