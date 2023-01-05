@@ -17,6 +17,7 @@ function Skills() {
                 <h2 className="heading2" data-aos="fade-up">Frameworks & Libraries</h2>
                 <SkillsList>
                     <SkillsItem src="/images/skills/react.webp" name="React JS" />
+                    <SkillsItem src="/images/skills/next.webp" name="Next JS" />
                     <SkillsItem src="/images/skills/bootstrap.webp" name="Bootstrap" />
                     <SkillsItem src="/images/skills/sass.webp" name="Sass" />
                 </SkillsList>
@@ -25,6 +26,7 @@ function Skills() {
                 <h2 className="heading2" data-aos="fade-up">Databases</h2>
                 <SkillsList>
                     <SkillsItem src="/images/skills/mysql.webp" name="MySQL" />
+                    <SkillsItem src="/images/skills/mongodb.webp" name="MongoDB" />
                 </SkillsList>
             </div>
             <div>

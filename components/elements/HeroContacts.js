@@ -14,7 +14,7 @@ function HeroContacts() {
     const whatsappRef = useRef();
     const twitterRef = useRef();
     const linkedInRef = useRef();
-    // const githubRef = useRef();
+    const githubRef = useRef();
 
     const setToolTip = (ref, title) => {
         let toolTip = new window.bootstrap.Tooltip(ref.current, {
@@ -31,7 +31,7 @@ function HeroContacts() {
         setToolTip(whatsappRef, "Whatsapp")
         setToolTip(twitterRef, "Twitter")
         setToolTip(linkedInRef, "LinkedIn")
-        // setToolTip(githubRef, "github")
+        setToolTip(githubRef, "github")
     })
 
     return (
@@ -46,11 +46,11 @@ function HeroContacts() {
                     <FontAwesomeIcon icon={faEnvelope} className="default"/>
                 </button>
             </a>
-            {/*<a href="https://github.com/tevinagg" target="_blank" rel="noreferrer">*/}
-            {/*    <button ref={githubRef} className="icons">*/}
-            {/*        <FontAwesomeIcon icon={faGithub} className="default"/>*/}
-            {/*    </button>*/}
-            {/*</a>*/}
+            <a href="https://github.com/tevinagg" target="_blank" rel="noreferrer">
+                <button ref={githubRef} className="icons">
+                    <FontAwesomeIcon icon={faGithub} className="default"/>
+                </button>
+            </a>
             <a href="https://wa.me/254718198492" target="_blank" rel="noreferrer" alt="whatsapp">
                 <button ref={whatsappRef} className="icons" aria-label="whatsapp">
                     <FontAwesomeIcon icon={faWhatsapp} className="whatsapp"/>

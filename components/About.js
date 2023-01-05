@@ -31,7 +31,7 @@ function About() {
             <p className="paragraph" data-aos="fade-up">
                 I would describe myself as a hybrid taught developer as I graduated with a Bachelor of Science degree in
                 Computer
-                Science from University of Nairobi in 2020 where
+                Science from University of Nairobi in 2019 where
                 I learnt the core fundamentals of what it entails
                 to be a
                 software developer. Over and above this, I have also done a fair share of self learning where I fell in
@@ -52,7 +52,7 @@ function About() {
                 environments globally to utilize and enhance my well honed skills.
             </p>
             <div className="d-flex justify-content-center">
-                <a href="/Tevin Aggrey CV.pdf" className="btn btn-primary mt-4" data-aos="fade-up">Download CV</a>
+                <a href="/Aggrey Tevin CV.pdf" className="btn btn-primary mt-4" data-aos="fade-up">Download CV</a>
             </div>
         </div>
     )

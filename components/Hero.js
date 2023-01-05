@@ -23,7 +23,7 @@ function Hero() {
 
     return(
         <div className="container-fluid">
-            <div className="row" id="hero" >
+            <div className="row" id="hero">
                 <div className="col-md-8" id="big-column">
                     <Proposition />
                     <HeroContacts />
