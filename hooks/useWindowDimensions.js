@@ -18,7 +18,6 @@ const useWindowDimensions = () => {
 
         window.addEventListener('load',() => {
             handleResize()
-            console.log('loading')
         });
 
         window.addEventListener('resize', handleResize);

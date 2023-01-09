@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import Image from "next/image";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -7,7 +6,7 @@ import {faGithub} from "@fortawesome/free-brands-svg-icons";
 
 function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, link, src}) {
 
-    const [windowDimensions, setWindowDimensions] = useWindowDimensions();
+    const [windowDimensions] = useWindowDimensions();
 
     const renderTechUsed = () => {
         let i = 0
@@ -32,12 +31,11 @@ function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, l
                 if (youtube) {
                     return (
                         <iframe src={link} style={{height: "inherit", width: "inherit"}} title="YouTube video player"
-                                frameBorder="0"
                                 allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen></iframe>
                     )
                 } else {
-                    return <Image src={src} alt={src} placeholder="blur" blurDataURL={src} layout="fill"/>
+                    return <Image src={src.src} alt={src.src} placeholder="blur" blurDataURL={src.src} layout="fill"/>
                 }
             }
 
@@ -53,7 +51,6 @@ function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, l
                 if (youtube) {
                     return (
                         <iframe src={link} style={{height: "inherit", width: "inherit"}} title="YouTube video player"
-                                frameBorder="0"
                                 allow="accelerometer; autoplay;clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen></iframe>
                     )
@@ -85,13 +82,13 @@ function ProjectItem({title, description, techUsed, demo, sourceCode, youtube, l
                 </div>
                 <div className="project-links">
                     <a href={demo} target="_blank" rel="noreferrer">
-                        <button className="btn btn-outline-primary mx-2">Preview Site &nbsp; <FontAwesomeIcon
+                        <button className="btn btn-outline-primary mx-2">View Demo &nbsp; <FontAwesomeIcon
                             icon={faArrowUpRightFromSquare}/></button>
                     </a>
-                    {/*<a href={sourceCode} target="_blank" rel="noreferrer">*/}
-                    {/*    <button className="btn btn-outline-primary mx-2">View Code &nbsp; <FontAwesomeIcon icon={faGithub}/>*/}
-                    {/*    </button>*/}
-                    {/*</a>*/}
+                    <a href={sourceCode} target="_blank" rel="noreferrer">
+                        <button className="btn btn-outline-primary mx-2">View Code &nbsp; <FontAwesomeIcon icon={faGithub}/>
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="col-1 project-details-extended"></div>
